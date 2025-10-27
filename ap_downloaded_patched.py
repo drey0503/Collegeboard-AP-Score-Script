@@ -34,7 +34,7 @@ ENDPOINTS = {
     "file_generation": f"{BASE_GW}/fileGeneration",
     "record_download": f"{BASE_GW}/webServiceDownloaded",
 }
-
+# Change this path to a folder you create
 DEFAULT_OUT_DIR = Path(r"C:\Users\dreyson\Desktop\APScores")
 TRACKER_FILENAME = ".ap_downloads.json"
 
@@ -755,3 +755,4 @@ def _send_summary_email(downloads: List[Dict[str, str]], notes: List[str], succe
 
 if __name__ == "__main__":
     main()
+
