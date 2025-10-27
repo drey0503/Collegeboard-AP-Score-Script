@@ -65,7 +65,7 @@ SFTP_PASS = os.environ.get("SFTP_PASS")  # optional if using key
 REMOTE_DIR = os.environ.get(
     "SFTP_REMOTE_DIR", "/incoming/AP_Score_Data_File_Collegeboard")
 LOCAL_DIR = Path(os.environ.get(
-    "LOCAL_DIR", r"C:\Users\dreyson\Desktop\SAT_Files"))
+    "LOCAL_DIR", r"C:\Users\dreyson\Desktop\AP_Files"))
 MAX_UPLOAD_RETRIES = int(os.environ.get("MAX_UPLOAD_RETRIES", "3"))
 # seconds base for exponential backoff
 BACKOFF_BASE = float(os.environ.get("BACKOFF_BASE", "2"))
@@ -304,3 +304,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
